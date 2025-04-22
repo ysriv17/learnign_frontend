@@ -21,14 +21,14 @@ const Login = () => {
 
 
   const redirectToLogin = async () => {
-    const clientId = "O_phURARDtsO0w1hkTGAsvfitS0a";
+    const clientId = "Khc2TE4I3odlbzuVw91ChKy0f6wa";
     const redirectUri = encodeURIComponent(
       "https://yash.centroxy:5173/auth/callback"
     );
     const scope = "openid address email groups phone profile roles";
     const state = "some-random-state"; // Optional for CSRF protection
 
-    const authUrl = `https://mysso.cnxy.in/oauth2/authorize?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&state=${state}`;
+    const authUrl = `https://login.cnxy.in/oauth2/authorize?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&state=${state}`;
    window.open(authUrl);
   };
   return (
