@@ -23,7 +23,7 @@ const Login = () => {
   const redirectToLogin = async () => {
     const clientId = "Khc2TE4I3odlbzuVw91ChKy0f6wa";
     const redirectUri = encodeURIComponent(
-      "https://yash.centroxy:5173/auth/callback"
+      "https://35.233.239.205:5173/auth/callback"
     );
     const scope = "openid address email groups phone profile roles";
     const state = "some-random-state"; // Optional for CSRF protection
